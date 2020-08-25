@@ -4,7 +4,9 @@
 session_start();
 
 if(isset($_GET['deslogar'])){
-      session_destroy(); 
+      session_destroy(); //nao funciona
+      unset($_SESSION['usuario']);//nao funciona
+      unset($_SESSION['senha']);//nao funciona
       echo "deslogar setado";
 }
 ?>
